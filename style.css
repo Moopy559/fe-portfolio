@@ -112,11 +112,18 @@ a {
   img {
     width: 100%;
   }
+  a {
+    border: none;
+  }
 }
 
 .tooling {
   display: flex;
   gap: 2rem;
+  margin-top: 0.5rem;
+  a {
+    border-bottom: solid 0.2rem var(--accent);
+  }
 }
 
 .contact {
