@@ -9,7 +9,9 @@
 }
 
 * {
-  outline: solid 1px red;
+  /* outline: solid 1px red; */
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -19,7 +21,87 @@ body {
   margin: 0px;
 }
 
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--text);
+  padding-bottom: 0.1rem;
+  border-bottom: solid 0.2rem var(--accent);
+}
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.title {
+  border-bottom: solid 1px var(--accent);
+  margin-bottom: 2rem;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 6rem;
+  }
+  a {
+    margin-bottom: 10rem;
+    display: inline-block;
+  }
+  span {
+    text-decoration: solid 0.4rem var(--accent) underline;
+  }
+}
+
+.skills {
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  li {
+    list-style-type: none;
+    font-size: 2rem;
+  }
+}
+
+.projects {
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  li {
+    list-style-type: none;
+  }
+}
+
+.contact {
+  margin-bottom: 8rem;
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
 }
