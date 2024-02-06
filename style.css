@@ -38,6 +38,7 @@ a {
   border-bottom: solid 0.2rem var(--accent);
   display: inline-block;
 }
+
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
@@ -139,5 +140,33 @@ a {
   svg {
     fill: var(--accent);
     width: 3rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    max-width: 900px;
+  }
+
+  .projects {
+    text-align: center;
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  .tooling {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 400px;
   }
 }
