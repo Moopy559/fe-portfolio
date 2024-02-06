@@ -104,13 +104,14 @@ a {
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
   }
   li {
     list-style-type: none;
   }
   img {
     width: 100%;
+    border-radius: 5px;
   }
   a {
     border: none;
