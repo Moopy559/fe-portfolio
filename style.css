@@ -109,6 +109,9 @@ a {
   li {
     list-style-type: none;
   }
+  img {
+    width: 100%;
+  }
 }
 
 .tooling {
@@ -130,6 +133,7 @@ a {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 8rem;
   font-weight: 900;
   font-size: 1.8rem;
@@ -160,13 +164,24 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3.5rem;
+  }
   .wrapper {
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .wrapper {
-    max-width: 400px;
+    max-width: 300px;
+  }
+  .skills {
+    li {
+      font-size: 1rem;
+    }
+  }
+  .footer {
+    font-size: 1.25rem;
   }
 }
