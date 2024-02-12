@@ -38,6 +38,10 @@ a {
   border-bottom: solid 0.2rem var(--accent);
   display: inline-block;
 }
+a:hover {
+  border-bottom: solid 0.2rem var(--secondary);
+  transition: border-bottom 200ms;
+}
 
 .wrapper {
   max-width: 1300px;
@@ -126,9 +130,6 @@ a {
   }
   a {
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -138,6 +139,10 @@ a {
   margin-top: 0.5rem;
   a {
     border-bottom: solid 0.2rem var(--accent);
+  }
+  a:hover {
+    border-bottom: solid 0.2rem var(--secondary);
+    transition: border-bottom 200ms;
   }
 }
 
