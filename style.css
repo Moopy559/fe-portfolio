@@ -117,13 +117,14 @@ a:hover {
   img {
     width: 100%;
     border-radius: 5px;
+    border-left: solid 10px var(--accent);
   }
   img:hover {
-    filter: brightness(30%);
-    transition: filter 200ms;
+    border-left: solid 10px var(--secondary);
+    transition: border-left 200ms;
   }
   img:not(:hover) {
-    transition: filter 200ms;
+    transition: border-left 200ms;
   }
   p {
     margin-top: 1rem;
